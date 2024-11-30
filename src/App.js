@@ -21,17 +21,17 @@ function App() {
     {
       name: 'Group Chat App',
       description: 'A real-time group chat application built with Node.js and Angular, leveraging WebSocket for instant communication and seamless user interaction.',
-      liveLink: 'https://chat-frontend-sepia.vercel.app/'
+      liveLink: 'https://group-chat-mentos.vercel.app/'
     },
     {
       name: 'Tic Tac Toe',
       description: 'A simple and interactive Tic Tac Toe game built with React. Features real-time play, intuitive UI, and game state tracking using React hooks.',
-      liveLink: 'https://tic-tac-toe-mentossezs-projects.vercel.app/'
+      liveLink: 'https://tic-tac-toe-mentos.vercel.app/'
     },
     {
       name: 'Analytics Dashboard',
       description: 'An interactive analytics dashboard built with Angular and Angular Material, showcasing data visualization, charts, and a clean, user-friendly UI.',
-      liveLink: 'https://mapup-ev-analytics-dashboard.vercel.app/'
+      liveLink: 'https://analytics-dashboard-mentos.vercel.app/'
     }
   ];
   return (
