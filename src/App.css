@@ -1,38 +1,283 @@
-.App {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #EAEAEA;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  color: #FF6F61;
+
+  code {
+    color: #cadc6d;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #4A90E2;
+}
+
+a:hover {
+  color: #FFB400;
+}
+
+button {
+  background: linear-gradient(135deg, #FF6F61, #FFB400);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header Styles */
+header {
+  background-color: #1F1F1F;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+  background-color: #1F1F1F;
+  padding: 50px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-section h1 {
+  font-size: 48px;
+  margin-bottom: -24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.about-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  word-spacing: 2px;
+  color: #bababa;
+}
+
+/* Skills Section Styling */
+.technologies-section {
+  background-color: #222;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.technologies-section h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #FF6F61;
+  letter-spacing: 2px;
+}
+
+/* Container for skills categories */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual skill categories */
+
+
+/* List styling */
+.skills-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-category ul li {
+  font-size: 18px;
+  color: #bababa;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.skills-category ul li:hover {
+  color: #FF6F61;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .skills-category h2 {
+    font-size: 16px;
+    color: #FFB400;
+    margin-bottom: 8px;
+  }
+
+  .skills-category ul li {
+    font-size: 16px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* Projects Section */
+/* Projects Section Styling */
+.section-styling {
+  background-color: #222;
+  padding: 50px 20px;
+  color: #EAEAEA;
+  text-align: center;
+}
+
+.section-styling h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #FF6F61;
+  letter-spacing: 2px;
+}
+
+/* Grid Layout for Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects-grid-style {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 0px 10%;
+}
+
+/* Individual Project Cards */
+.card-styling {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-styling h2 {
+  font-size: 24px;
+  color: #cadc6d;
+  margin-bottom: 15px;
+}
+
+/* Project Description Styling */
+.card-styling p {
+  font-size: 18px;
+  color: #bababa;
+  margin-bottom: 48px;
+}
+
+/* Link Styling */
+.project-link {
+  font-size: 18px;
+  color: #FF6F61;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #FF6F61;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #FF6F61;
+  color: #fff;
+}
+
+/* Hover Effect for Project Cards */
+.card-styling:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .section-styling h1 {
+    font-size: 28px;
+  }
+
+  .card-styling h2 {
+    font-size: 20px;
+  }
+
+  .card-styling p {
+    font-size: 16px;
+  }
+
+  .project-link {
+    font-size: 16px;
+  }
+}
+
+
+footer {
+  background-color: #333333;
   color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+footer p {
+  margin: 5px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer a:first-child {
+  text-transform: lowercase;
+}
+
+footer a {
+  color: #F28C8C;
+  font-size: 14px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    gap: 10px;
   }
 }
