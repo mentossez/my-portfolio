@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const skills = {
     languages: ["Java", "TypeScript", "JavaScript"],
-    frameworks: ["Angular 8, 12, 17", "React", "Spring Boot"],
+    frameworks: ["Angular 8, 12, 17", "Vue.js", "React", "Spring Boot"],
     webTechnologies: ["HTML5", "SCSS", "Bootstrap"],
     databases: ["MySQL", "PostgreSQL"],
     testing: ["Jasmine", "Karma"],
