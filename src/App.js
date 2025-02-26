@@ -24,6 +24,11 @@ function App() {
       liveLink: 'https://group-chat-mentos.vercel.app/'
     },
     {
+      name: 'Jot.It App',
+      description: 'Built a Vue.js Notes App with Firebase, featuring user authentication, CRUD operations, and real-time sync for seamless note management.',
+      liveLink: 'https://jot-it-app-phi.vercel.app/'
+    },
+    {
       name: 'Tic Tac Toe',
       description: 'A simple and interactive Tic Tac Toe game built with React. Features real-time play, intuitive UI, and game state tracking using React hooks.',
       liveLink: 'https://tic-tac-toe-mentos.vercel.app/'
